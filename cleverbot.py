@@ -34,8 +34,14 @@ async def on_ready():
 # uses cleverbotfree to communicate with Cleverbot
 @bot.command()
 async def chat(ctx, userInput):
-    response = sendCb(userInput)
-    await ctx.send(response)
+    try:
+        response = sendCb(userInput)
+        await ctx.send(response)
+    except:
+        embed = discord.Embed(title='ERROR: Could not connect. Please try again',
+                               color=0xff0000)
+        await ctx.send(embed=embed) 
+
 
     
 @bot.command()
