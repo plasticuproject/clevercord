@@ -30,11 +30,12 @@ Failure to observe this step will give you the error <br />
 "Message: ‘geckodriver’ executable needs to be in PATH." <br />
 
 <b>Discord</b>
+
 Head over to https://discordapp.com/developers/applications/me and create a new app. <br />
 Click on "Create Bot User". <br />
 Once done, you can get the secret bot token. <br />
 
-In reasons.py replace all <...> with appropriate information. <br />
+In cleverbot.py replace all <...> with appropriate information. <br />
 
 To start bot, run:
 ```
@@ -44,4 +45,4 @@ To add bot to server add your CLIENT_ID to this URL and visit in browser:  <br /
 "https://discordapp.com/oauth2/authorize?client_id=<YOUR_BOT_CLIENT_ID_GOES_HERE>&scope=bot" <br />
 
 ## Usage
-When bot is active in server, just type "&chat" followed by what you want to send to Cleverbot <br /.
+When bot is active in server, just type "&chat" followed by what you want to send to Cleverbot <br />.
