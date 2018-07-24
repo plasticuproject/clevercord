@@ -838,7 +838,7 @@ class BotBase(GroupMixin):
         """
 
         # hack to place quotes around your text
-        if message.content.startswith('&'):
+        if message.content.startswith('&chat'):
             hack = message.content.split(' ', 1)
             message.content = '&chat "' + hack[1] + '"'
         # end hack
