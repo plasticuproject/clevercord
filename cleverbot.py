@@ -1,5 +1,5 @@
 '''
-Discord bot to chat with Cleverbot. Uses the cleverbotfree library to <br />
+Discord bot to chat with Cleverbot. Uses the cleverbotfree library to
 communicate via a headless Firefox browser.
 Just message "&chat" to chat with Cleverbot.
 
