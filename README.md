@@ -10,14 +10,6 @@ pip install -U https://github.com/Rapptz/discord.py/archive/rewrite.zip
 ```
 
 ## Installation
-Move the file bot.py to your discord module (discord/ext/commands/) and <br />
-replace the existing file. I hacked up this file so you don't have to surround <br />
-your message text with quotations. <br />
-Example:
-```
-mv bot.py ~/Envs/clevercord/lib/python3.6/site-packages/discord/ext/commands/
-```
-
 <b>Drivers</b>
 
 Selenium requires a driver to interface with the headless browser. Firefox <br />
