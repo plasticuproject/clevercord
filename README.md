@@ -6,7 +6,7 @@ communicate via a headless Firefox browser.
 Python 3.x, pip, and the latest version of Firefox browser installed. <br />
 ```
 pip install cleverbotfree
-pip install -U https://github.com/Rapptz/discord.py/archive/rewrite.zip
+pip install -U discord.py
 ```
 
 ## Installation
