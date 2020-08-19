@@ -1,0 +1,5 @@
+cleverbotfree>=1.2.4
+discord.py>=1.4.0
+requests>=2.24.0
+selenium>=3.141.0
+zxcvbn>=4.4.28
