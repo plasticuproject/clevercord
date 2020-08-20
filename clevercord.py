@@ -30,10 +30,10 @@ bot = commands.Bot(command_prefix='&')
 sendCb = Cleverbot().single_exchange
 
 # Discord Bot Token variable
-token = os.environ['DISCORD_TOKEN']
+token = os.environ['CLEVERCORD_TOKEN']
 
 # Discord Client ID
-clientID = os.environ['DISCORD_CLIENT_ID']
+clientID = os.environ['CLEVERCORD_CLIENT_ID']
 
 
 @bot.event
