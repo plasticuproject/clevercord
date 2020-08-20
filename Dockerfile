@@ -2,9 +2,11 @@
 FROM ubuntu:18.04
 
 # Set environment variables.
+ARG TOKEN
+ARG CLIENT_ID
 ENV HOME /root
-ENV DISCORD_TOKEN <Token>
-ENV DISCORD_CLIENT_ID <client_ID>
+ENV DISCORD_TOKEN $TOKEN
+ENV DISCORD_CLIENT_ID $CLIENT_ID
 
 # Define working directory.
 WORKDIR /root
@@ -30,4 +32,4 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 # Define default command.
-CMD ["python3", "./cleverbot.py"]
+CMD ["python3", "./clevercord.py"]

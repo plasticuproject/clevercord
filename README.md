@@ -41,15 +41,18 @@ Once you are done setting up your bot, save your *Client_ID*, *Token*, and *Clie
 
 Add to your **.bashrc** file:
 ```
-export DISCORD_TOKEN=<Token>
-export DISCORD_CLIENT_ID=<Client_ID>
+export CLEVERCORD_TOKEN=<Token>
+export CLEVERCORD_CLIENT_ID=<Client_ID>
 ```
 
 
 ## Docker
-To build the docker container, clone this repository and set your **ENV** variables in the **Dockerfile**. <br />
-From inside the main directory run: <br />
-`docker build -t clevercord .` <br />
+To build the docker container, clone this repository and from inside the main directory run: <br />
+```
+docker build --build-arg TOKEN=${CLEVERCORD_TOKEN} \
+--build-arg CLIENT_ID=${CLEVERCORD_CLIENT_ID} \
+-t clevercord .
+```
 To run the container: <br />
 `docker run clevercord`
 
