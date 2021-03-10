@@ -47,8 +47,8 @@ async def on_ready():
 # uses cleverbotfree to communicate with Cleverbot
 @bot.command()
 async def chat(ctx, *args):
-    print(ctx.message.author)
-    print(ctx.message.content)
+    # print(ctx.message.author)
+    # print(ctx.message.content)
     userInput = ' '.join(args)
     try:
         response = sendCb(userInput)
@@ -61,8 +61,6 @@ async def chat(ctx, *args):
 # search NVD for CVE info
 @bot.command()
 async def cve(ctx, *args):
-    print(ctx.message.author)
-    print(ctx.message.content)
     try:
         if len(args) == 0:
             message = '&cve'
@@ -78,8 +76,6 @@ async def cve(ctx, *args):
 # analyze password strength
 @bot.command()
 async def password(ctx, *args):
-    print(ctx.message.author)
-    print(ctx.message.content)
     try:
         if len(args) == 0:
             message = '&password'
@@ -98,8 +94,6 @@ async def password(ctx, *args):
 # grab a quote from Uncle Ted!
 @bot.command()
 async def ted(ctx):
-    print(ctx.message.author)
-    print(ctx.message.content)
     try:
         with open('bomb.txt', 'r') as bomb:
             text = bomb.read()
